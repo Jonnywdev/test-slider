@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* generic styles */
@@ -23,7 +24,10 @@ a {
 
 /* header */
 header {
-    box-shadow: 0px 5px 10px #888888;
+    box-shadow: 0px 5px 10px #000;
+    width: 100%;
+    background: #fff;
+    z-index: 98;
 }
 
 header .container {
@@ -54,19 +58,54 @@ header .container {
     margin-bottom: 0;
 }
 
-.main-icons-container ul li a {
-    color: #888888;
-    transition: all .5s;
-}
-
-.main-icons-container ul li a:hover {
-    color: #000;
-}
-
 .icon-r {
-    padding-right: 15px;
+    padding-right: 25px;
 }
 
 .nav-link {
     font-size: 20px;
+}
+
+.main-hover-txt {
+    color: #000 !important;
+    transition: all .5s;
+}
+
+.main-hover-txt:hover {
+    color: #D1D1D1 !important;
+}
+
+/* hero image */
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    background: rgba(100, 100, 100, 0.7);
+    position: absolute;
+    padding: 25px;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    max-width: 25%;
+}
+
+.basic-btn {
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.white-btn {
+    background: #fff;
+    color: #000;
 }
